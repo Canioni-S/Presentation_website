@@ -219,6 +219,10 @@ ul {
 .content p{
     line-height: 1.2em;
 }
+
+/* CONTACT */
+
+
 /* --MEDIA QUERIES-- */
 
 @media screen and (max-width: 1200px) {
