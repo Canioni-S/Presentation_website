@@ -104,7 +104,7 @@ ul {
 .logo_name {
     font-family: "cream_cake";
     color: whitesmoke;
-    text-shadow: white 0px 0px 10px;
+    text-shadow: whitesmoke 0px 0px 10px;
     font-size: 4em;
 }
 
@@ -152,6 +152,8 @@ ul {
     width: 60%;
 }
 
+/* EXPERIENCES SECTION */
+
 .main_container {
     display: flex;
     flex-direction: column;
@@ -159,13 +161,15 @@ ul {
     background-color: #333;
 }
 
+.about_me_title{
+    padding: 0.5em;
+}
 
 .part {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
-    /* padding: 5em 0em; */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -184,6 +188,11 @@ ul {
     background-image: url(./images/game_portal.jpg);
 }
 
+.interest img{
+    width: auto;
+    height: 60%;
+}
+
 .images {
     border-radius: 50px;
     width: 40%;
@@ -197,8 +206,19 @@ ul {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 20px 25px;
+    padding: 1.5em;
 }
 
+.content h2{
+    padding: 1em 0;
+}
+
+.content h3{
+    padding: 0.5em 0;
+}
+.content p{
+    line-height: 1.2em;
+}
 /* --MEDIA QUERIES-- */
 
 @media screen and (max-width: 1200px) {
