@@ -20,28 +20,31 @@
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     font-family: "arsenik";
     color: whitesmoke;
     text-shadow: white 0px 0px 10px;
 }
 
+
 h2 {
     text-transform: uppercase;
+    padding: 1em 0;
 }
 
 h3, h4 {
     text-transform: capitalize;
+    padding: 0.5em 0;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
 }
 
-ul {
+/* ul {
     list-style: none;
-}
+} */
 
 /* 100% PER SCROLL EFFECT */
 
@@ -126,15 +129,17 @@ ul {
 
 /* --PRESENTATION PART-- */
 
-.presentation {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+.welcome{
     background-image: url(./images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
 }
 
@@ -161,7 +166,7 @@ ul {
     background-color: #333;
 }
 
-.about_me_title{
+.about_me_title {
     padding: 0.5em;
 }
 
@@ -169,7 +174,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -178,6 +182,7 @@ ul {
 
 .work {
     background-image: url(./images/tools.jpg);
+    height: 100%;
 }
 
 .travel {
@@ -188,7 +193,7 @@ ul {
     background-image: url(./images/game_portal.jpg);
 }
 
-.interest img{
+.interest img {
     width: auto;
     height: 60%;
 }
@@ -209,19 +214,57 @@ ul {
     padding: 1.5em;
 }
 
-.content h2{
-    padding: 1em 0;
-}
 
-.content h3{
+.content h3 {
     padding: 0.5em 0;
 }
-.content p{
+
+.content p {
     line-height: 1.2em;
 }
 
 /* CONTACT */
 
+.contact_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(./images/workplace.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact, .cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2em;
+    line-height: 2em;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 20px 10px;
+}
+.contact ul{
+    list-style: none;
+}
+.cv img{
+    width: 60%;
+}
+
+
+
+/* CV PAGE */
+
+.skillsDiv::before, .skillsDiv::after {
+    content: "";
+    display: block;
+    background: #0dcaf0;
+    height: 0.5em;
+}
 
 /* --MEDIA QUERIES-- */
 
@@ -234,17 +277,14 @@ ul {
 
     .work .content {
         background-image: url(./images/ConstructionSite.jpg);
-        background-size: cover;
     }
 
     .travel .content {
         background-image: url(./images/chiloe.jpg);
-        background-size: cover;
     }
 
     .interest .content {
-        background-image: url(./images/Arcade.jpg);
-
+        background-image: url(./images/controllers.jpg);
     }
 
     .images {
@@ -256,6 +296,18 @@ ul {
         background-color: rgba(0, 0, 0, 0.7);
         background-blend-mode: multiply;
         background-size: cover;
+    }
+
+    .contact_container{
+        flex-direction: column;
+    }
+
+    .contact, .cv{
+        width: 70%;
+    }
+
+    .contact{
+        height: 40%;
     }
 }
 
