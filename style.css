@@ -393,9 +393,15 @@ a {
         height: 100%;
     }
 
-    .presentation {
+    .presentation{
         flex-direction: column;
-        gap: 4em;
+        justify-content: center;
+    }
+
+    .presentation.responsive {
+        justify-content: start;
+        padding-top: 1em;
+        gap: 0.5em;
     }
 
     .presentation_text {

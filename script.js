@@ -4,13 +4,20 @@ function Burgerfunction(x) {
 
   var y = document.getElementById("navbar");
   if (y.className == "navbar") {
-      y.className += " responsive";
+    y.className += " responsive";
   } else {
-      y.className = "navbar";
+    y.className = "navbar";
+  }
+
+  var z = document.getElementById("pres");
+  if (z.className == "presentation") {
+    z.className += " responsive";
+  } else {
+    z.className = "presentation";
   }
 }
 
-var string ="Hello Welcome to my personal website. My name is Stéphan Canioni, I am a Web developer in formation. I am currently looking for an unpaid company internship from the 9th Febuary to the 25th march. If you are interested in my profile, contact me with the contact form or visit my social networks.";
+var string = "Hello Welcome to my personal website. My name is Stéphan Canioni, I am a Web developer in formation. I am currently looking for an unpaid company internship from the 9th Febuary to the 25th march. If you are interested in my profile, contact me with the contact form or visit my social networks.";
 var array = string.split("");
 var timer;
 
